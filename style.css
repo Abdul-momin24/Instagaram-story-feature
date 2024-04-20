@@ -1,0 +1,96 @@
+*{ 
+Margin:0;
+Padding:0;
+Box-sizing: border-box;
+Font-family: xyz;
+}
+
+html,body{
+Width:100%;
+Height:100%;
+}
+
+body{
+    background-color: rgb(122, 196, 198);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#fullScreen{
+    height: 100%;
+    width:100%;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    position: absolute;
+    border-radius: 10px;
+
+    
+    transition: all ease-in-out 0.5s;
+    z-index: -1;
+    
+}
+
+
+#card{
+    height: 450px;
+    width:330px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+}
+
+#stories{
+    height: 120px;
+    width: 100%;
+    border-radius: 9px;
+    padding: 20px;
+    border-bottom: 1px solid rgb(202, 202, 202);
+    background-color: black;
+
+    /* here we are learning new properties for aligning the items */
+
+    white-space: nowrap;     /* here we are learning for display inline block for wrap and no wrap features*/
+    overflow-x:auto;
+    overflow-y: hidden;
+ 
+}
+
+#stories::-webkit-scrollbar{
+    display: none;
+}
+
+#story{
+    box-sizing:border-box;
+    height: 80px;
+    width:80px;
+    border-radius: 50%; 
+    background: conic-gradient(red, rgb(255, 106, 0), rgb(153, 0, 255), rgb(0, 98, 255), rgb(255, 0, 230), rgb(255, 0, 140), red) ;
+    padding: 3px;
+    overflow: hidden;
+    display: inline-block;
+   margin-right: 5px;
+   cursor: pointer;
+
+}
+
+#story img{
+    height: 100%;
+    width: 100%;
+    border-radius: 47px;
+    object-fit: cover;
+    
+}
+
+#card-image{
+    position: relative;
+    top: 20%;
+    height: 80px;
+    width: 100%;
+    object-fit: cover;
+}
